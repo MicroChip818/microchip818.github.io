@@ -6,10 +6,9 @@ body {
   line-height: 1.6;
 }
 
-h1 {
+h1, h2 {
   color: #4da3ff;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
 
 p {
@@ -17,5 +16,7 @@ p {
 }
 
 .tagline {
-  margin-top: 30px;
+  margin-top: -150px;
+  text-align: center;
 }
+
