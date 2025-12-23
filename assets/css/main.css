@@ -34,6 +34,7 @@ p {
   max-width: none;
   padding-left: 10px;
   padding-right: 10px;
+  display: inline-block;
 }
 .tagline {
   margin-top: -30px;
@@ -44,7 +45,9 @@ p {
 }
 
 .nav_links {
-  margin-right: 35px;
-  font-size: 30px;
+  margin-right: 25px;
+  font-size: 24px;
 }
 
+footer {
+  text-align: center;
