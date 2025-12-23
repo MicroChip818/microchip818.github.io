@@ -32,7 +32,6 @@ p {
   display: inline-block;
 }
 .tagline {
-  margin-top: -30px;
   text-align: center;
   max-width: none;
   padding-left: 10px;
