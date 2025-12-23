@@ -51,5 +51,10 @@ header {
   font-size: 24px;
 }
 
+nav {
+  margin-right: auto;
+}
+
 footer {
   text-align: center;
+}
