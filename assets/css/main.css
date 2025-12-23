@@ -52,7 +52,8 @@ header {
 }
 
 nav {
-  margin-right: auto;
+  max-width: none;
+  text-align: left;
 }
 
 footer {
