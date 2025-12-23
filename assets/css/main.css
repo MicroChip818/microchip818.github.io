@@ -32,6 +32,9 @@ header {
   font-size: 36px;
   font-weight: bold;
   max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
 }
 
 .tagline {
