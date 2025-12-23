@@ -1,35 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Learning programming the fun and interactive way with coding projects, exercises, and quick tips.">
-    <title>Homepage | Code Outside the Box</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="index.html" class="nav_links">Homepage</a>
-        <a href="about.html" class="nav_links">About Me</a>
-        <a href="https://github.com/microchip818" class="nav_links">GitHub</a>
-      </nav>
-      <p class="blog_name">Code Outside the Box</p>
-      <p class="tagline">Learning about programming, the fun and interactive way.</p>
-    </header>
-    <hr>
-    <main>
-      <h1>Homepage</h1>
-      <section id="welcome">
-        <p>Welcome to my coding blog! I explore the vast world of programming and share my discoveries through coding projects and exercises. Let's learn coding together!</p>
-      </section>
-      <section id="posts">
-        <h2>Posts</h2>
-        <p>Posts coming soon!</p>
-      </section>
-    </main>
-  </body>
-  <footer>
-    <p>© 2025 Code Outside the Box</p>
-  </footer>
-</html>
+---
+layout: default
+title: Homepage | Code Outside the Box
+---
+
+<h1>Homepage</h1>
+<section id="welcome">
+  <p>Welcome to my coding blog! I explore the vast world of programming and share my discoveries through coding projects and exercises. Let's learn coding together!</p>
+</section>
+<section id="posts">
+  <h2>Latest Posts</h2>
+  <p>Posts coming soon!</p>
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a> — {{ post.date | date: "%B %d, %Y" }}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
