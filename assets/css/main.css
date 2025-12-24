@@ -23,6 +23,7 @@ h2 {
 
 h3 {
   font-size: 24px;
+}
 
 .blog_name {
   font-size: 30px;
@@ -62,7 +63,16 @@ nav {
 }
 
 .post_meta {
-  text-align: center;
+  text-align: center
+}
+
+#comments {
+  margin-top: 3rem;
+}
+
+#comments h2 {
+  margin-bottom: 1rem;
+}
   
 footer {
   text-align: center;
