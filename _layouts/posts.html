@@ -30,19 +30,6 @@
           </p>
           {{ content }}
         </article>
-        <script>
-          const timeElement = document.getElementById("post-time");
-          const utcTime = timeElement.getAttribute("data-utc");
-          const localTime = new Date(utcTime);
-          timeElement.textContent = localTime.toLocaleString('en-US', {
-            weekday: 'short',
-            year: 'numeric',
-            month: 'short',
-            day: 'numeric',
-            hour: 'numeric',
-            minute: '2-digit'
-          });
-        </script>
         <section id="comments">
           <h2>Comments</h2>
           <script src="https://utteranc.es/client.js"
@@ -58,5 +45,24 @@
         <p>© 2025 Code Outside the Box</p>
       </footer>
     </div>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const timeElement = document.getElementById("post-time");
+      if (!timeElement) return;
+
+      const utcTime = timeElement.getAttribute("data-utc");
+      if (!utcTime) return;
+
+      const localTime = new Date(utcTime);
+      timeElement.textContent = localTime.toLocaleString('en-US', {
+        weekday: 'short',
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: '2-digit'
+      });
+    });
+    </script>
   </body>
 </html>
