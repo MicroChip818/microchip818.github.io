@@ -64,6 +64,14 @@ nav {
 .post_meta {
   text-align: center;
 
+#comments {
+  margin-top: 3rem;
+}
+
+#comments h2 {
+  margin-bottom: 1rem;
+}
+  
 footer {
   text-align: center;
 }
