@@ -18,43 +18,45 @@
       <p class="tagline">Learning about programming, the fun and interactive way.</p>
     </header>
     <hr>
-    <main>
-      <article>
-        <h1>{{ page.title }}</h1>
-        <p class="post_meta">By {{ page.author }} | {{ page.date | date: "%B %d, %Y %I:%M %p" }}</p>
-        <p class="post_categories">
-          {% for category in page.categories %}
-            <a href="{{ '/categories/' | append: category | relative_url }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}
-            {% endfor %}
-        </p>
-        {{ content }}
-      </article>
-      <script>
-        const timeElement = document.getElementById("post-time");
-        const utcTime = timeElement.getAttribute("data-utc");
-        const localTime = new Date(utcTime);
-        timeElement.textContent = localTime.toLocaleString('en-US', {
-          weekday: 'short',
-          year: 'numeric',
-          month: 'short',
-          day: 'numeric',
-          hour: 'numeric',
-          minute: '2-digit'
-        });
-      </script>
-      <section id="comments">
-        <h2>Comments</h2>
-        <script src="https://utteranc.es/client.js"
-          repo="MicroChip818/microchip818.github.io"
-          issue-term="url"
-          theme="github-light"
-          crossorigin="anonymous"
-          async>
+    <div class="main_content">
+      <main>
+        <article>
+          <h1>{{ page.title }}</h1>
+          <p class="post_meta">By {{ page.author }} | {{ page.date | date: "%B %d, %Y %I:%M %p" }}</p>
+          <p class="post_categories">
+            {% for category in page.categories %}
+              <a href="{{ '/categories/' | append: category | relative_url }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}
+              {% endfor %}
+          </p>
+          {{ content }}
+        </article>
+        <script>
+          const timeElement = document.getElementById("post-time");
+          const utcTime = timeElement.getAttribute("data-utc");
+          const localTime = new Date(utcTime);
+          timeElement.textContent = localTime.toLocaleString('en-US', {
+            weekday: 'short',
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric',
+            hour: 'numeric',
+            minute: '2-digit'
+          });
         </script>
-      </section>
-    </main>
+        <section id="comments">
+          <h2>Comments</h2>
+          <script src="https://utteranc.es/client.js"
+            repo="MicroChip818/microchip818.github.io"
+            issue-term="url"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+          </script>
+        </section>
+      </main>
+      <footer>
+        <p>© 2025 Code Outside the Box</p>
+      </footer>
+    </div>
   </body>
-  <footer>
-    <p>© 2025 Code Outside the Box</p>
-  </footer>
 </html>
