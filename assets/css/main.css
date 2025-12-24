@@ -4,6 +4,7 @@ body {
   color: #ffffff;
   padding: 2rem;
   line-height: 1.6;
+  max-width: 600px;
 }
 
 h1 {
@@ -12,17 +13,14 @@ h1 {
   text-align: center;
 }
 
-p, h2, h3, h4, h5, h6, li, pre {
-  max-width: 600px;
-  margin: 10px auto;
-}
-
 h2 {
   font-size: 30px;
+  margin: 10px auto;
 }
 
 h3 {
   font-size: 24px;
+  margin: 10px auto;
 }
 
 .blog_name {
