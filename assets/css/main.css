@@ -55,7 +55,7 @@ nav {
   text-align: left;
 }
 
-post_list {
+.post_list {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
