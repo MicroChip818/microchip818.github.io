@@ -9,12 +9,11 @@ title: Homepage | Code Outside the Box
 </section>
 <section id="posts">
   <h2>Latest Posts</h2>
-  <p>Posts coming soon!</p>
   <ul>
     {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a> — {{ post.date | date: "%B %d, %Y" }}
-      </li>
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% else %}
+      <li>No posts yet. Check back soon!</li>
     {% endfor %}
   </ul>
 </section>
