@@ -12,7 +12,7 @@ h1 {
   text-align: center;
 }
 
-p, h2, h3, h4, h5, h6 {
+p, h2, h3, h4, h5, h6, li, pre {
   max-width: 600px;
   margin: 10px auto;
 }
