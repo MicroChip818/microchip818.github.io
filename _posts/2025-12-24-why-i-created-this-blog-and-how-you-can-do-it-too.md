@@ -1,9 +1,10 @@
 ---
 layout: posts
 title: Why I created this blog - and how you can do it too
-date: 2025-12-23 14:00:00 -0800
+date: 2025-12-24 14:00:00 -0800
+last_updated: 2025-12-24 2:22:00 -0800
 author: Ethan
-categories: [Overview, Tutorial]
+categories: [Tutorial]
 ---
 
 Hi! I'm Ethan. In my first blog post, I will explain why I chose to create this blog in further detail, and how you can start a blog on GitHub yourself. Let's dive in, shall we? <br>
@@ -33,7 +34,7 @@ author: # Only add this line and an author's name if all posts will be written b
 If you want to use custom themes, go to <a href="https://github.com/topics/jekyll-theme" target="_blank" rel="noopener noreferrer">https://github.com/topics/jekyll-theme</a>
 ### Step 2: Create basic layouts
 I recommend creating two layouts for now: a default layout for a homepage and about me page, and a layout for posts. I recommend using HTML (Hypertext Markup Language) to create them as HTML is a widely used markup language to control every webpage's structure. First, create a _layouts folder then add one HTML file per layout. From here, you can add HTML code for your layouts. Thanks to Jekyll integration, there are many commands that you can use to simplify layouts. I recommend adding the following to your layouts: <br>
-- The site's metadata, found in the <head> element
+- The site's metadata, found in the <head> element <br>
 I added a custom element in which all webpage titles end with "| Code Outside the Box" (my blog name). If you want to do something like this, copy the code into your layout's metadata:
 ```html
 <title>{{ page.title }} | Code Outside the Box</title>
@@ -58,9 +59,13 @@ title: About Me # The page's title and heading
 You are free to use HTML or Markdown to write your content. Just change the file type to .md if you are going to use Markdown.
 
 ### Step 4: Add CSS and update your layouts with the correct CSS files
-HTML represents the website's structure. However, CSS (Cascading Style Sheets) represents its styling and design. For example, let's say you have a pizza. HTML represents the dough; the pizza's base. CSS represents the toppings of the pizza. At this stage, I recommend creating a folder in your repository root called assets. This folder will store any external code and scripts, not just CSS. In this new assets folder, create a folder called css (all lowercase). From there, you can create CSS files ending in .css, so I created a file called main.css in the assets/css folder. However, to make sure the HTML code in your layouts processes the CSS, add the following line of code in your head's metadata for each layout:
+HTML represents the website's structure. However, CSS (Cascading Style Sheets) represents its styling and design. For example, let's say you have a pizza. HTML represents the dough; the pizza's base. CSS represents the toppings of the pizza. At this stage, I recommend creating a folder in your repository root called assets. This folder will store any external code and scripts, not just CSS. In this new assets folder, create a folder called css (all lowercase). From there, you can create CSS files ending in .css, so I created a file called main.css in the assets/css folder. However, to make sure the HTML code in your layouts processes the CSS, add the following line of code in your head's metadata for your layouts:
 ```html
 <link rel="stylesheet" href="assets/css/main.css"> <!-- Adjust main.css to whatever CSS file you want to use, it doesn't have to be the same CSS file for every layout but keep everything else the same -->
+```
+If you're using Markdown instead:
+```html
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 ```
 Once you're done adding this minor change, feel free to experiment with CSS! Try it on different elements and even classes, and use different properties with different values! Here is a short CSS snippet in my code:
 ```css
