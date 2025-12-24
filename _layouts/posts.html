@@ -21,6 +21,11 @@
     <main>
       <h1>{{ page.title }}</h1>
       <p class="post_meta">By {{ page.author }} | {{ page.date | date: "%B %d, %Y %I:%M %p" }}</p>
+      <p class="post-categories">
+        {% for category in page.categories %}
+          <a href="{{ '/categories/' | append: category | relative_url }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}
+        {% endfor %}
+      </p>
       {{ content }}
       <section id="comments">
         <h2>Comments</h2>
