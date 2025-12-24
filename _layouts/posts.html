@@ -19,14 +19,29 @@
     </header>
     <hr>
     <main>
-      <h1>{{ page.title }}</h1>
-      <p class="post_meta">By {{ page.author }} | {{ page.date | date: "%B %d, %Y %I:%M %p" }}</p>
-      <p class="post_categories">
-        {% for category in page.categories %}
-          <a href="{{ '/categories/' | append: category | relative_url }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}
-        {% endfor %}
-      </p>
-      {{ content }}
+      <article>
+        <h1>{{ page.title }}</h1>
+        <p class="post_meta">By {{ page.author }} | {{ page.date | date: "%B %d, %Y %I:%M %p" }}</p>
+        <p class="post_categories">
+          {% for category in page.categories %}
+            <a href="{{ '/categories/' | append: category | relative_url }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}
+            {% endfor %}
+        </p>
+        {{ content }}
+      </article>
+      <script>
+        const timeElement = document.getElementById("post-time");
+        const utcTime = timeElement.getAttribute("data-utc");
+        const localTime = new Date(utcTime);
+        timeElement.textContent = localTime.toLocaleString('en-US', {
+          weekday: 'short',
+          year: 'numeric',
+          month: 'short',
+          day: 'numeric',
+          hour: 'numeric',
+          minute: '2-digit'
+        });
+      </script>
       <section id="comments">
         <h2>Comments</h2>
         <script src="https://utteranc.es/client.js"
