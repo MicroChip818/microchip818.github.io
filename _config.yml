@@ -4,3 +4,4 @@ baseurl: ""
 url: "https://microchip818.github.io"
 theme: null
 markdown: kramdown
+author: Ethan
