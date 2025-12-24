@@ -1,2 +1,2 @@
-# microchip818.github.io
-Welcome to my coding blog! I explore the vast world of programming and share my discoveries through coding projects and exercises. Let's learn coding together!
+# Code Outside the Box
+Hi! Welcome to my coding blog! My name is Ethan, a 15-year-old high school student. As someone with a burning passion for coding, I created this blog to share my love for coding, to document my learning experience, and to help others improve at coding. I will explore the vast world of programming and share my discoveries through coding projects and exercises. Let's learn coding together!
