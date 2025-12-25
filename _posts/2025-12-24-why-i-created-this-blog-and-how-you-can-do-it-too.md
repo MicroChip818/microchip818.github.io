@@ -35,7 +35,12 @@ If you want to use custom themes, go to <a href="https://github.com/topics/jekyl
 ### Step 2: Create basic layouts
 I recommend creating two layouts for now: a default layout for a homepage and about me page, and a layout for posts. I recommend using HTML (Hypertext Markup Language) to create them as HTML is a widely used markup language to control every webpage's structure. First, create a _layouts folder then add one HTML file per layout. From here, you can add HTML code for your layouts. Thanks to Jekyll integration, there are many commands that you can use to simplify layouts. I recommend adding the following to your layouts:
 - The site's metadata, found in the <head> element
-- The site's header, consisting of navigation links (Homepage, About Me, GitHub profile), the name of the blog and a short tagline to be displayed on all pages
+- The site's header, consisting of navigation links (Homepage, About Me, GitHub profile), the name of the blog and a short tagline to be displayed on all pages <br>
+
+I added a custom element in which all webpage titles end with "| Code Outside the Box" (my blog name). If you want to do something like this, copy the code into your layout's metadata:
+```html
+<title>{{ page.title }} | Code Outside the Box</title>
+```
 - A heading for the title of the blog post or page <br>
 
 The following code should go into the main section of each of your webpages or the <main> element:
@@ -44,11 +49,7 @@ The following code should go into the main section of each of your webpages or t
 {{ content }} <!-- The main content of each of your webpages/posts. Can be written in HTML or Markdown. -->
 ```
 - POSTS ONLY: Advanced features such as comments, post categories, post author/date/time (you don't need to worry about these for now)
-I added a custom element in which all webpage titles end with "| Code Outside the Box" (my blog name). If you want to do something like this, copy the code into your layout's metadata:
 
-```html
-<title>{{ page.title }} | Code Outside the Box</title>
-```
 ### Step 3: Create your blog's homepage and About Me page
 You're going to have to create the 2 following files: index.html and about.html (the 2nd file could be a different name if you want to). The index.html file represents your homepage and it is necessary because it is the default file for any website, helping improve SEO (Search Engine Optimization). The about.html file represents your homepage. Write the following code into both files before the content:
 ```yaml
