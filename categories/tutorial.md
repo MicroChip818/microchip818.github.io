@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Tutorial Posts
+title: Tutorials
 category: Tutorial
 permalink: /categories/tutorial/
 ---
