@@ -7,3 +7,4 @@ markdown: kramdown
 author: Ethan
 plugins:
   - jekyll-last-modified-at
+timezone: America/Los_Angeles
