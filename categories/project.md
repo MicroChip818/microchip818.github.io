@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Project Posts
+title: Programming Projects
 category: Project
 permalink: /categories/project/
 ---
