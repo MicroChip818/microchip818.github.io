@@ -24,18 +24,18 @@
           <p>DEBUG last_modified_at: {{ page.last_modified_at }}</p>
           <h1>{{ page.title }}</h1>
           <p class="post_meta">
-            By {{ page.author }} | Published: 
+            By {{ page.author }} | 
             <time class="js-date"
               datetime="{{ page.date | date_to_xmlschema }}">
               {{ page.date | date: "%B %d, %Y at %I:%M %p" }}
             </time>
             
-            {% if page.last_modified_at and page.last_modified_at > page.date %}
+            {% if page.updated and page.updated > page.date %}
               <br>
               Last updated:
               <time class="js-date"
-                datetime="{{ page.last_modified_at | date_to_xmlschema }}">
-                {{ page.last_modified_at | date: "%B %d, %Y at %I:%M %p" }}
+                datetime="{{ page.updated | date_to_xmlschema }}">
+                {{ page.last_updated | date: "%B %d, %Y at %I:%M %p" }}
               </time>
             {% endif %}
           </p>
