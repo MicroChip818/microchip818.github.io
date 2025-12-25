@@ -22,7 +22,22 @@
       <main>
         <article>
           <h1>{{ page.title }}</h1>
-          <p class="post_meta" id="post-time" data-author="{{ page.author }}" data-utc="{{ page.date | date: "%Y-%m-%dT%H:%M:%SZ" }}">By {{ page.author }} | {{ page.date | date: "%B %d, %Y %I:%M %p" }}</p>
+          <p class="post_meta">
+            By {{ page.author }} | Published: 
+            <time class="js-date"
+              datetime="{{ page.date | date_to_xmlschema }}">
+              {{ page.date | date: "%B %d, %Y at %I:%M %p" }}
+            </time>
+            
+            {% if page.last_modified_at and page.last_modified_at > page.date %}
+              <br>
+              Last updated:
+              <time class="js-date"
+                datetime="{{ page.last_modified_at | date_to_xmlschema }}">
+                {{ page.last_modified_at | date: "%B %d, %Y at %I:%M %p" }}
+              </time>
+            {% endif %}
+          </p>
           <p class="post_categories">
             {% for category in page.categories %}
               <a href="{{ '/categories/' | append: category | downcase | relative_url }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}
@@ -46,27 +61,23 @@
       </footer>
     </div>
     <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const timeElement = document.getElementById("post-time");
-      if (!timeElement) return;
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("time.js-date").forEach(el => {
+          const iso = el.getAttribute("datetime");
+          if (!iso) return;
 
-      const utcTime = timeElement.getAttribute("data-utc");
-      const author = timeElement.getAttribute("data-author");
+          const date = new Date(iso);
 
-      if (!utcTime || !author) return;
-
-      const localTime = new Date(utcTime);
-      const formattedTime = localTime.toLocaleString('en-US', {
-        weekday: 'short',
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric',
-        hour: 'numeric',
-        minute: '2-digit'
+          el.textContent = date.toLocaleString(undefined, {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            hour: "numeric",
+            minute: "2-digit",
+            hour12: true
+          });
+        });
       });
-      
-      timeElement.textContent = `By ${author} | ${formattedTime}`;
-    });
     </script>
   </body>
 </html>
