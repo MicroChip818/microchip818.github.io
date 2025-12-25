@@ -2,7 +2,7 @@
 layout: posts
 title: Why I created this blog - and how you can do it too
 date: 2025-12-24 14:00:00 -0800
-last_updated: 2025-12-24 3:37:00 -0800
+last_updated: 2025-12-24 20:47:00 -0800
 author: Ethan K.
 categories: [Tutorial]
 ---
@@ -37,13 +37,15 @@ I recommend creating two layouts for now: a default layout for a homepage and ab
 - The site's metadata, found in the <head> element
 - The site's header, consisting of navigation links (Homepage, About Me, GitHub profile), the name of the blog and a short tagline to be displayed on all pages
 - A heading for the title of the blog post or page <br>
-The following code should go into the main section of each of your webpages or the <main> element: <br>
+
+The following code should go into the main section of each of your webpages or the <main> element:
 ```html
 <h1>{{ page.title }}</h1> <!-- Creates a heading with the title of your article/page -->
 {{ content }} <!-- The main content of each of your webpages/posts. Can be written in HTML or Markdown. -->
 ```
 - POSTS ONLY: Advanced features such as comments, post categories, post author/date/time (you don't need to worry about these for now)
-I added a custom element in which all webpage titles end with "| Code Outside the Box" (my blog name). If you want to do something like this, copy the code into your layout's metadata: <br>
+I added a custom element in which all webpage titles end with "| Code Outside the Box" (my blog name). If you want to do something like this, copy the code into your layout's metadata:
+
 ```html
 <title>{{ page.title }} | Code Outside the Box</title>
 ```
