@@ -3,7 +3,7 @@ layout: posts
 title: Why I created this blog - and how you can do it too
 date: 2025-12-24 14:00:00 -0800
 last_updated: 2025-12-24 3:37:00 -0800
-author: Ethan
+author: Ethan K.
 categories: [Tutorial]
 ---
 
