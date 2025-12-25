@@ -33,10 +33,10 @@ author: # Only add this line and an author's name if all posts will be written b
 ```
 If you want to use custom themes, go to <a href="https://github.com/topics/jekyll-theme" target="_blank" rel="noopener noreferrer">https://github.com/topics/jekyll-theme</a>
 ### Step 2: Create basic layouts
-I recommend creating two layouts for now: a default layout for a homepage and about me page, and a layout for posts. I recommend using HTML (Hypertext Markup Language) to create them as HTML is a widely used markup language to control every webpage's structure. First, create a _layouts folder then add one HTML file per layout. From here, you can add HTML code for your layouts. Thanks to Jekyll integration, there are many commands that you can use to simplify layouts. I recommend adding the following to your layouts: <br>
-- The site's metadata, found in the <head> element <br>
+I recommend creating two layouts for now: a default layout for a homepage and about me page, and a layout for posts. I recommend using HTML (Hypertext Markup Language) to create them as HTML is a widely used markup language to control every webpage's structure. First, create a _layouts folder then add one HTML file per layout. From here, you can add HTML code for your layouts. Thanks to Jekyll integration, there are many commands that you can use to simplify layouts. I recommend adding the following to your layouts:
+- The site's metadata, found in the <head> element
 - The site's header, consisting of navigation links (Homepage, About Me, GitHub profile), the name of the blog and a short tagline to be displayed on all pages
-- A heading for the title of the blog post or page
+- A heading for the title of the blog post or page <br>
 The following code should go into the main section of each of your webpages or the <main> element:
 ```html
 <h1>{{ page.title }}</h1> <!-- Creates a heading with the title of your article/page -->
