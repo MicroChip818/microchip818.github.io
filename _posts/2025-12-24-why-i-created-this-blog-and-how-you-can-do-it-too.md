@@ -37,13 +37,13 @@ I recommend creating two layouts for now: a default layout for a homepage and ab
 - The site's metadata, found in the <head> element
 - The site's header, consisting of navigation links (Homepage, About Me, GitHub profile), the name of the blog and a short tagline to be displayed on all pages
 - A heading for the title of the blog post or page <br>
-The following code should go into the main section of each of your webpages or the <main> element:
+The following code should go into the main section of each of your webpages or the <main> element: <br>
 ```html
 <h1>{{ page.title }}</h1> <!-- Creates a heading with the title of your article/page -->
 {{ content }} <!-- The main content of each of your webpages/posts. Can be written in HTML or Markdown. -->
 ```
 - POSTS ONLY: Advanced features such as comments, post categories, post author/date/time (you don't need to worry about these for now)
-I added a custom element in which all webpage titles end with "| Code Outside the Box" (my blog name). If you want to do something like this, copy the code into your layout's metadata:
+I added a custom element in which all webpage titles end with "| Code Outside the Box" (my blog name). If you want to do something like this, copy the code into your layout's metadata: <br>
 ```html
 <title>{{ page.title }} | Code Outside the Box</title>
 ```
