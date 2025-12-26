@@ -89,3 +89,11 @@ nav {
 #comments h2 {
   margin-bottom: 1rem;
 }
+
+html, body {
+  overflow-x: hidden;
+}
+
+pre {
+  overflow-x: auto;
+}
