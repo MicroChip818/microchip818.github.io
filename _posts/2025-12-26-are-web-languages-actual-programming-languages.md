@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: Are web languages actual programming languages?
-date: 2025-12-26 17:30:00 -0800
+date: 2025-12-26 13:23:00 -0800
 author: Ethan K.
 categories: [Overview]
 ---
