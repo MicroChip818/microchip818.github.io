@@ -18,6 +18,7 @@ Before I talk about the webpage's code, here are some things to keep in mind:
 - For non-zero values, the value's unit needs to be specified (px, %, etc.). If a value is equal to 0, you don't need a unit.
 - Some attributes don't have values. They are called boolean values; they could either be enabled or disabled from the element.
 A webpage's source code contains HTML as well as different links, including the CSS file. To view a page's source code on desktop, use the keyboard shortcut Ctrl + U. If you're on a mobile device, copy the webpage's link (make sure it starts with https://), then go into the search bar and type view-source: followed by the link you copied. To view the CSS file, click on the link that ends with .css. In this source code overview, I will explain every major element in detail.
+
 ### The &lt;!DOCTYPE html&gt; declaration
 This element declares that the webpage is run in the HTML5 markup language. It is a must for every HTML page.
 ### The &lt;html&gt; element
