@@ -2,6 +2,7 @@
 layout: posts
 title: What makes up a webpage?
 date: 2025-12-25 17:30:00 -0800
+updated: 2025-12-27 12:39:00 -0800
 author: Ethan K.
 categories: [Overview]
 ---
@@ -9,11 +10,11 @@ In my last post, I explained how you could create a blog step-by-step. There is 
 Before I talk about the webpage's code, here are some things to keep in mind:
 - An element is represented by an opening tag <> followed by a closing tag </> with content inside.
 - An element may or may not have attributes followed by values. The syntax for an element like such is:
-- Element classes are special attributes. I use classes on specific elements to simplify styling for those elements.
 
 ```html
 <element attribute="value">content</element>
 ```
+- Element classes are special attributes. I use classes on specific elements to simplify styling for those elements.
 - In CSS, properties are traits given to elements, classes, or IDs. A property must have a value. For example, a CSS element with a font-size property and a value of 18px sets the element's font size to 18 pixels.
 - For non-zero values, the value's unit needs to be specified (px, %, etc.). If a value is equal to 0, you don't need a unit.
 - Some attributes don't have values. They are called boolean values; they could either be enabled or disabled from the element.
