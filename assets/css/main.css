@@ -97,3 +97,7 @@ html, body {
 pre {
   overflow-x: auto;
 }
+
+a, a:visited {
+  color: #0000FF;
+}
