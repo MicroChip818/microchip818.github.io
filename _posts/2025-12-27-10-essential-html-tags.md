@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: 10 Essential HTML Tags
-date: 2025-12-25 17:30:00 -0800
+date: 2025-12-27 13:29:00 -0800
 author: Ethan K.
 categories: [Overview]
 ---
