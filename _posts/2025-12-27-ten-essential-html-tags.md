@@ -1,7 +1,8 @@
 ---
 layout: posts
-title: 10 Essential HTML Tags
+title: 10 essential HTML tags
 date: 2025-12-27 13:29:00 -0800
+updated: 2025-12-29 13:06:00 -0800
 author: Ethan K.
 categories: [Overview]
 ---
