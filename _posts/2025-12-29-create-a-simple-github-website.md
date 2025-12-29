@@ -5,7 +5,6 @@ date: 2025-12-29 13:03:00 -0800
 author: Ethan K.
 categories: [Project]
 ---
-**Difficulty: 3/10**<br>
 In this exercise, you will create a website with a new GitHub project repository. This project will test you on basic knowledge of HTML and CSS. If you need help, go to <a href="https://microchip818.github.io/overview/2025/12/25/what-makes-up-a-webpage.html" target="_blank">this post</a> about the HTML and CSS content of a website. A list of the website's conditions will be listed, and a solution will be posted, but only look at the solution after attempting to create the website on your own.
 ### HTML Requirements
 - You must include the &lt;!DOCTYPE html&gt; declaration, the html tag, the head tag, and the body tag.
