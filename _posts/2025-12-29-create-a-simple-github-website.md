@@ -21,14 +21,14 @@ In this exercise, you will create a website with a new GitHub project repository
 - For the main section of the other page, add two lists (1 ordered and 1 unordered) then add 2 images that are both clickable and will send you to an external source. Split the sections with another horizontal rule.
 - Each list should have at least 3 items.
 - Add a subheading for each section.
-- 
+
 ### CSS Requirements
 - Use a red background color and make the text black.
 - The heading should have a font size of 36px, the subheadings should have a size of 24px, and the paragraphs should have a size of 14px.
 - Add a margin of 10px between all elements.
 - Make the main heading align in the center of the page (horizontally).
 - Use a different font of your choice.
-- 
+
 ### Final Thoughts and Solution
 Now that you know the requirements of this exercise, it's time to get coding! Feel free to add more content to go beyond the minimum requirements! When you're done, check the <a href="https://github.com/MicroChip818/2025-12-29-website-solution" target="_blank">solution</a>. Have fun creating your website!
 
