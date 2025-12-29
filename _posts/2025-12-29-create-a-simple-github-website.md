@@ -29,7 +29,7 @@ In this exercise, you will create a website with a new GitHub project repository
 - Make the main heading align in the center of the page (horizontally).
 - Use a different font of your choice.
 - 
-### Final Thoughts
+### Final Thoughts and Solution
 Now that you know the requirements of this exercise, it's time to get coding! Feel free to add more content to go beyond the minimum requirements! When you're done, check the <a href="https://github.com/MicroChip818/2025-12-29-website-solution" target="_blank">solution</a>. Have fun creating your website!
 
 
