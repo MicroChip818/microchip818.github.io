@@ -40,6 +40,7 @@ img {
   max-width: 600px;
   width: auto;
   height: auto;
+  display: block;
 }
 
 .blog_name {
