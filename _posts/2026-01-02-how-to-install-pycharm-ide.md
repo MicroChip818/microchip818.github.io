@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: How to install PyCharm IDE
-date: 2025-01-02 11:35:00 -0800
+date: 2026-01-02 11:35:00 -0800
 author: Ethan K.
 categories: [tutorial]
 ---
