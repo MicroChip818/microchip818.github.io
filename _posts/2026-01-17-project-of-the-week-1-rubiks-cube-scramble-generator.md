@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: Project of the Week #1: Rubik's Cube scramble generator
+title: Project of the Week 1: Rubik's Cube scramble generator
 date: 2026-01-17 17:43:00 -0800
 author: Ethan K.
 categories: [Project]
