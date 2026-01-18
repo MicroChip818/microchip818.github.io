@@ -1,9 +1,9 @@
 ---
 layout: posts
-title: Project of the Week 1: Rubik's Cube scramble generator
-date: 2026-01-17 17:43:00 -0800
+title: Project of the Week 1&colon: Rubik's Cube Scramble Generator
+date: 2026-01-17 17:55:00 -0800
 author: Ethan K.
-categories: [Project]
+categories: [Tutorial]
 ---
 
 Welcome to the new Project of the Week series! In this series, I will create a project using any coding language. By the end of the school semester (May 21st for me), I will compile all of my projects into a digital GitHub portfolio. This week's project will be an online Rubik's Cube scramble generator. I have been fascinated with the Rubik's Cube and speedcubing for the past two weeks, so it would be nice to make a fun project about it. Let's get started!
