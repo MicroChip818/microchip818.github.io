@@ -2,6 +2,7 @@
 layout: posts
 title: "Project of the Week #1: Rubik's Cube Scramble Generator"
 date: 2026-01-17 17:55:00 -0800
+updated: 2026-01-18 12:14:00 -0800
 author: Ethan K.
 categories: [Tutorial]
 ---
@@ -49,7 +50,7 @@ def scramble_cube(moves, moves_per_line): # Arguments: moves (total moves), move
         prev = face # Reset and repeat the loop again
     print(scramble) # Displays the scramble
 ```
-To view and copy the code without comments, click this <a href="https://github.com/MicroChip818/project-of-the-week/blob/main/rubiks-cube-scramble-generator.py" target="_blank">link</a>.
+To view and copy the code, click this <a href="https://github.com/MicroChip818/project-of-the-week/blob/main/2026/01-18-rubiks-cube-scramble-generator.py" target="_blank">link</a>. To run the code, click this <a href="https://github.com/MicroChip818/project-of-the-week/actions/workflows/2026-01-18-rubiks-cube-scramble-generator.yml" target="_blank">link</a> then go to the dropdown that says Run Workflow --> Run Workflow button --> click on the most recent workflow that says "Rubik's Cube Scramble Generator" --> run --> Run script. The scramble algorithm(s) should appear under the script, and you can customize argument values before running the workflow.
 
 ## Final Thoughts
-Hope you enjoyed this project! Stay tuned for the next weekly project!
+Hope you enjoyed this project! Stay tuned for the next weekly project!dd
