@@ -44,6 +44,16 @@
               <a href="{{ '/categories/' | append: category | downcase | relative_url }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}
               {% endfor %}
           </p>
+          {% if page.toc %}
+          <nav class="table-of-contents">
+            <h2>Table of Contents</h2>
+            <ul>
+              {% for heading in page.content | toc %}
+                <li><a href="#{{ heading.id }}">{{ heading.text }}</a></li>
+              {% endfor %}
+            </ul>
+          </nav>
+          {% endif %}
           {{ content }}
         </article>
         <section id="comments">
