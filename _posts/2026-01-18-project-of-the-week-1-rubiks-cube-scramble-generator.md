@@ -31,7 +31,7 @@ An example scramble consisting of 21 moves would look like this: L2 D R2 U2 F U2
 This project is run using Python. Comments starting with # are used to provide detailed code explanations.
 ```python
 import random
-def scramble_cube(moves, moves_per_line): # Arguments: moves (total moves), moves_per_line (maximum moves displayed per line)
+def scramble_cube(moves, moves_per_line): # Parameters: moves (total moves), moves_per_line (maximum moves displayed per line)
     faces = ["F", "B", "U", "D", "L", "R"] # All possible faces
     modifiers = ["", "'", "2"] # All possible modifiers
     scramble = "" # String used for the scramble
@@ -50,7 +50,7 @@ def scramble_cube(moves, moves_per_line): # Arguments: moves (total moves), move
         prev = face # Reset and repeat the loop again
     print(scramble) # Displays the scramble
 ```
-To view and copy the code, click this <a href="https://github.com/MicroChip818/project-of-the-week/blob/main/2026/01-18-rubiks-cube-scramble-generator.py" target="_blank">link</a>. I will implement a way to run the code later, but for now, just copy the code into a Python editor such as PyCharm.
+To view and copy the code, click this <a href="https://github.com/MicroChip818/project-of-the-week/blob/main/2026/python/01-18-rubiks-cube-scramble-generator.py" target="_blank">link</a>. I will implement a way to run the code later, but for now, just copy the code into a Python editor such as PyCharm.
 
 ## Final Thoughts
 Hope you enjoyed this project! Stay tuned for the next weekly project!
