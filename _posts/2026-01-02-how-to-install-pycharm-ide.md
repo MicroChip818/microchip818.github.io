@@ -12,5 +12,5 @@ I made a <a href="https://microchip818.github.io/tutorial/2025/12/31/how-to-inst
 3. Before doing this step, you need to have a Python interpreter or a Python virtual environment so that PyCharm can read the Python code. Once you are done, create a directory with the Python interpreter and a Python file that ends with .py.
 ![Python download page](/assets/images/posts/how-to-install-pycharm-ide/pycharm-directory.png)
 4. In your new Python **file** (part of the directory), type whatever code you like! Experiment with the IDE and see what you can make!
-### Final Thoughts
+## Final Thoughts
 If something is unclear to you, drop a comment! I will be here to help! With that being said, have fun coding!
