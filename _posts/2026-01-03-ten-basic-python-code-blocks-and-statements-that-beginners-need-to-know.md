@@ -207,5 +207,5 @@ print(bool(8 < 8)) # Output: False
 print(bool("Hello")) # Output: True
 ```
 
-### Final Thoughts
+## Final Thoughts
 Each of these Python statements/code blocks are essential for beginner Python programs, so put them to good use! With that being said, I hope you learned something useful today! Happy coding!
