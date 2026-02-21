@@ -20,6 +20,7 @@ Use these criteria to determine if blogging is for you. If not, don't worry! The
 
 Now, here's the fun part. Use this step-by-step guide to create a blog using GitHub pages and Jekyll. Before proceeding, make sure you have a GitHub account and a GitHub repository with the format: username.github.io in which username is your GitHub username in all lowercase. If you want a project site, feel free to use whatever repository name you like but that means changing the base URL that I will explain later. <br>
 ### Step 1: Create the _config.yml folder in your repository's root
+
 The _config.yml determines the basic configuration for your blog. It is written in YAML (YAML Ain't Markup Language). Here is a default codeblock of the file:
 ```yaml
 layout: # Name of your layout, we will get into layouts later
@@ -33,6 +34,7 @@ author: # Only add this line and an author's name if all posts will be written b
 ```
 If you want to use custom themes, go to <a href="https://github.com/topics/jekyll-theme" target="_blank" rel="noopener noreferrer">https://github.com/topics/jekyll-theme</a>
 ### Step 2: Create basic layouts
+
 I recommend creating two layouts for now: a default layout for a homepage and about me page, and a layout for posts. I recommend using HTML (Hypertext Markup Language) to create them as HTML is a widely used markup language to control every webpage's structure. First, create a _layouts folder then add one HTML file per layout. From here, you can add HTML code for your layouts. Thanks to Jekyll integration, there are many commands that you can use to simplify layouts. I recommend adding the following to your layouts:
 - The site's metadata, found in the <head> element
 - The site's header, consisting of navigation links (Homepage, About Me, GitHub profile), the name of the blog and a short tagline to be displayed on all pages <br>
@@ -51,6 +53,7 @@ The following code should go into the main section of each of your webpages or t
 - POSTS ONLY: Advanced features such as comments, post categories, post author/date/time (you don't need to worry about these for now)
 
 ### Step 3: Create your blog's homepage and About Me page
+
 You're going to have to create the 2 following files: index.html and about.html (the 2nd file could be a different name if you want to). The index.html file represents your homepage and it is necessary because it is the default file for any website, helping improve SEO (Search Engine Optimization). The about.html file represents your homepage. Write the following code into both files before the content:
 ```yaml
 ---
@@ -61,6 +64,7 @@ title: About Me # The page's title and heading
 You are free to use HTML or Markdown to write your content. Just change the file type to .md if you are going to use Markdown.
 
 ### Step 4: Add CSS and update your layouts with the correct CSS files
+
 HTML represents the website's structure. However, CSS (Cascading Style Sheets) represents its styling and design. For example, let's say you have a pizza. HTML represents the dough; the pizza's base. CSS represents the toppings of the pizza. At this stage, I recommend creating a folder in your repository root called assets. This folder will store any external code and scripts, not just CSS. In this new assets folder, create a folder called css (all lowercase). From there, you can create CSS files ending in .css, so I created a file called main.css in the assets/css folder. However, to make sure the HTML code in your layouts processes the CSS, add the following line of code in your head's metadata for your layouts:
 ```html
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}"> <!-- Adjust main.css to whatever CSS file you want to use, it doesn't have to be the same CSS file for every layout but keep everything else the same -->
@@ -78,9 +82,11 @@ body {
 Note: I used a Google font for this. You have to add a special line of code to add Google fonts and items from external stylesheets.
 
 ### Step 5: Create your first post
+
 I am at this step right now. Your first post doesn't have to be fancy or perfect - just have fun creating it! To do so, create a folder called _posts. In this folder, you can create HTML or Markdown posts. I am using Markdown since it is more convenient. Make sure you name the post file the following: <br>
 YYYY-MM-DD-title-of-your-post.html (change to .md if you are using Markdown) <br>
 Write the title of your post in all lowercase and separate spaces with hyphens so Jekyll recognizes the file.
 
 ### Final Thoughts
+
 If you made it this far, you are awesome! You 100% have what it takes to create a blog of your own on GitHub! If you have any questions for me or if you just want to share your thoughts, drop a comment! I will be posting every day since I am on winter break right now. Anyways, see you next time and have fun coding!
