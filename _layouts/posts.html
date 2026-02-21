@@ -46,14 +46,7 @@
           </p>
           <nav class="table-of-contents">
             <h2>Table of Contents</h2>
-            <ul>
-              {% assign headings = page.content | toc %}
-              {% for heading in headings %}
-                <li>
-                  <a href="#{{ heading.id }}">{{ heading.text }}</a>
-                </li>
-              {% endfor %}
-            </ul>
+            {{ content | toc }}
           </nav>
           {{ content }}
         </article>
