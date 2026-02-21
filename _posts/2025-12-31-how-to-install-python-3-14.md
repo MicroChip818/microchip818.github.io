@@ -17,5 +17,5 @@ Are you interested in using Python? If so, this guide is for you. Before we get 
 ![Python download page](/assets/images/posts/how-to-install-python-3-14/python-command-prompt.png)
 What if a new version is released? Don't worry! Simply use the Python install manager or installer to update Python to the latest version!
 
-### Final Thoughts
+## Final Thoughts
 And there you have it! Please comment your thoughts and let me know if this guide helped you! Happy coding!
