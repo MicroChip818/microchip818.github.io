@@ -6,13 +6,13 @@ author: Ethan K.
 categories: Overview
 ---
 Python 3.14 contains a wide range of statements and code blocks (multiple statements used to perform similar tasks) that can be used to manipulate data. Here are 10 of them that every new Python programmer should know. I will provide examples for each.
-### Tips
+## Tips
 - Try running the following code blocks using the Python IDLE shell.
 - For statements (single lines that have individual outputs), such as print and declaring a variable, run 1 line at a time.
 - For code blocks, such as if statements and for loops, run the entire code block, enter into a new line, then create an extra line below.
 - A hashtag (#) represents the start of a single-line comment in Python, used to leave developer notes. Comments are not part of the actual code.
 
-### 1. print()
+## 1. print()
 
 - This statement prints all kinds of data you want the console to display.
 - It can range from text to complex variables!
@@ -24,7 +24,7 @@ print(1+2+3+4) # Output: 10
 print([1, 2, 3, 4, 5]) # Output: [1, 2, 3, 4, 5]
 ```
 
-### 2. var = 100
+## 2. var = 100
 
 - The left side is the variable name, and the right side is the value.
 - When printing a variable, place the variable's name in the print statement, and it will print the value of the variable.
@@ -45,7 +45,7 @@ print(var1+var2+var3) # Output: 300
 print(listvariables) # Output: [50, 100, 150]
 ```
 
-### 3. if ... elif ... else ...
+## 3. if ... elif ... else ...
 
 - This is a conditional code block, meaning that the code will run if the condition specified on the if statement is met.
 - The elif statement is used if the if statement's condition is not met but the condition on the elif statement is met.
@@ -65,7 +65,7 @@ else:
 # Output: Unfortunately, you scored less than the target.
 ```
 
-### 4. for i in ...
+## 4. for i in ...
 
 - This block of code performs an action or set of actions for a specified number of times.
 - You can change the increment value of i to increase by multiple values.
@@ -111,7 +111,7 @@ for activity in to_do_list:
 # dinner
 ```
 
-### 5. f"This is an f-string, using a variable of {var}."
+## 5. f"This is an f-string, using a variable of {var}."
 
 - The f-string, also known as a formatted string literal, allows you to add variables with ease.
 - Wrap the variable around curly brackets {} so you don't have to concatenate (combine) strings.
@@ -122,7 +122,7 @@ pointsgoal = 200
 print(f"I scored {points1} points today. I have a goal of scoring {pointsgoal} points by the end of the day.") # Output: I scored 100 points today. I have a goal of scoring 200 points by the end of the day.
 ```
 
-### 6. string[0:8], list[0:8]
+## 6. string[0:8], list[0:8]
 
 - Substrings and sublists are used to split strings and lists.
 - The index of a string or list is the position of a character or list item in order, beginning with index 0.
@@ -143,7 +143,7 @@ print(f"On {month} {day}, {year}, I like to do the following activities:") # Out
 print(good_activities) # Output: ['eat', 'play', 'code']
 ```
 
-### 7. def function() ...
+## 7. def function() ...
 
 - After the def keyword, the function can be named anything as long as it follows the variable naming rules/conventions.
 - Functions let you create a custom code block that can be called any time.
@@ -169,7 +169,7 @@ greeting()
 # How are you?
 ```
 
-### 8. input()
+## 8. input()
 
 - You can set a variable to equal a user input value.
 - The input is stored as a string, so you need to convert it to other data types if necessary.
@@ -179,7 +179,7 @@ feeling = input("How are you feeling today?") # Input: good
 print(f"I am feeling {feeling} today.") # Output: I am feeling good today.
 ```
 
-### 9. len()
+## 9. len()
 
 - Use the len function and put any variable with multiple indices to find the length of the object. This works for lists, strings, sets, tuples, dictionaries, etc.
 
@@ -190,7 +190,7 @@ print(len(name)) # Output: 5
 print(len(items)) # Output: 3
 ```
 
-### 10. str(), int(), float(), bool()
+## 10. str(), int(), float(), bool()
 
 - str() converts a Python object to a string.
 - int() converts a Python object to an integer.
