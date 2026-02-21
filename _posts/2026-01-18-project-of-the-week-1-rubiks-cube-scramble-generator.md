@@ -54,3 +54,4 @@ To view and copy the code, click this <a href="https://github.com/MicroChip818/p
 
 ## Final Thoughts
 Hope you enjoyed this project! Stay tuned for the next weekly project!
+Update: This series has been moved to start on February 14, 2026, due to my inactivity. I will continue making more fun projects!
