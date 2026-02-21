@@ -6,7 +6,7 @@ author: Ethan K.
 categories: [Project]
 ---
 In this exercise, you will create a website with a new GitHub project repository. This project will test you on basic knowledge of HTML and CSS. If you need help, go to <a href="https://microchip818.github.io/overview/2025/12/25/what-makes-up-a-webpage.html" target="_blank">this post</a> about the HTML and CSS content of a website. A list of the website's conditions will be listed, and a solution will be posted, but only look at the solution after attempting to create the website on your own.
-### HTML Requirements
+## HTML Requirements
 - You must include the &lt;!DOCTYPE html&gt; declaration, the html tag, the head tag, and the body tag.
 - You must display the website's content in a language of your choice.
 - You must include all required metadata in the head element.
@@ -22,14 +22,14 @@ In this exercise, you will create a website with a new GitHub project repository
 - Each list should have at least 3 items.
 - Add a subheading for each section.
 
-### CSS Requirements
+## CSS Requirements
 - Use a red background color and make the text black.
 - The heading should have a font size of 36px, the subheadings should have a size of 24px, and the paragraphs should have a size of 14px.
 - Add a margin of 10px between all elements.
 - Make the main heading align in the center of the page (horizontally).
 - Use a different font of your choice.
 
-### Final Thoughts and Solution
+## Final Thoughts and Solution
 Now that you know the requirements of this exercise, it's time to get coding! Feel free to add more content to go beyond the minimum requirements! When you're done, check the <a href="https://github.com/MicroChip818/2025-12-29-website-solution" target="_blank">solution</a>. Have fun creating your website!
 
 
